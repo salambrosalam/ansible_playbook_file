@@ -1,6 +1,6 @@
 ---
 - name: My test playbook to create text file on my host machine
-  hosts: win-servers
+  hosts: WINDOWS
   
   tasks:
         -name: Print Hello world!!!
