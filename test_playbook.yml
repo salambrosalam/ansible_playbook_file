@@ -1,6 +1,6 @@
 ---
 - name: My test playbook to create text file on my host machine
-  hosts: ALL
+  hosts: all
   
   tasks:
        - name: Print Hello world!!!
