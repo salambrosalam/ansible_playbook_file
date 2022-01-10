@@ -1,6 +1,6 @@
 ---
 - name: My test playbook to create text file on my host machine
-  hosts: UBUNTU
+  hosts: ALL
   
   tasks:
        - name: Print Hello world!!!
