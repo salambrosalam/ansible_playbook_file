@@ -1,0 +1,10 @@
+---
+- name: My test playbook to create text file on my host machine
+  hosts: all
+  
+  tasks:
+       - name: Print Hello world!!!
+         debug:
+                msg: "Hello wolrd creating txt file with message on Windows host machine"
+
+       - shell: echo "hello i am from ansible :) Leave me here" > C:\script_for_ansible\file1.txt
