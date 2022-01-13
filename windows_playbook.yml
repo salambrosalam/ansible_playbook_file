@@ -1,6 +1,7 @@
 ---
 - name: My test playbook to create text file on my host machine
   hosts: all
+  remote_user: Administrator
   become: yes
 
   tasks:
