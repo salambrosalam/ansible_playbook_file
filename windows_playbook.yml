@@ -2,11 +2,10 @@
 - name: My test playbook to create text file on my host machine
   hosts: all
   remote_user: Administrator
-  become: yes
 
   tasks:
        - name: Print Hello world!!!
          debug:
                 msg: "Hello wolrd creating txt file with message on Windows host machine"
-
-       - shell: echo "hello i am from ansible :) Leave me here" > C:\Users\Administrator\file1.txt
+ 
+       - ansible.legacy.win_shell: echo "hello i am from ansible :) Leave me here" > C:\Users\Administrator\file1.txt
